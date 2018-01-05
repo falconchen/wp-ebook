@@ -1,0 +1,16 @@
+.idea/
+*.swp
+*.bak
+.DS_Store
+*.log
+.buildpath
+.project
+.settings/
+/src/wp-config.php
+/src/.project
+/src/wp-content/uploads/
+/src/wp-content/cache/
+/src/robots.txt
+/src/wp-content/advanced-cache.php
+/cmd/restore/
+
