@@ -3360,3 +3360,11 @@ blockquote,
 			margin-bottom: 15px;
 		}
 	}
+
+
+@media (min-width: 1500px) {
+    .container {
+        width: 1370px;
+    }
+
+}
