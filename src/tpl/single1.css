@@ -32,6 +32,7 @@
 }
 .btn.douban {
     position: absolute;
+    display: none;
 }
 
 /**slider**/
@@ -125,3 +126,39 @@
 
 .clear{clear:both;}
 .reg-login-btns {margin-bottom: 20px;}
+
+.fp-book-meta {
+    margin:0 10px;
+}
+.fp-book-meta h5{
+    font-size:14px;
+    margin:10px 0;
+}
+
+.comment-left {
+    display: inline-block;
+}
+.comment-right {
+    display: inline-block;
+    width: 70%;
+}
+
+.newsanchor_recent_comments li {
+    margin-top:10px;
+    padding-top:10px;
+    clear: both;
+}
+
+.comment-on {
+    text-align: right;
+}
+
+.newsanchor_recent_posts_widget .thumb {display: none;}
+.newsanchor_recent_posts_widget ul .date {display: none;}
+.newsanchor_recent_posts_widget ul li{margin-top: 5px; padding-top: 16px;  }
+
+
+.pocket-list h3 {font-size: 16px;}
+
+.pagination-bar nav{text-align: center}
+.sidebar.cat-cloud-tag-widget {margin-bottom: 15px;}

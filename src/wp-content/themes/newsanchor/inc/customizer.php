@@ -17,6 +17,30 @@ function newsanchor_customize_register( $wp_customize ) {
     $wp_customize->get_section( 'title_tagline' )->priority = '9';
     $wp_customize->get_section( 'title_tagline' )->title = __('Site title/tagline/logo', 'newsanchor');
 
+    $wp_customize->add_setting(
+        'publish_date',
+        array(
+            'type'=>'option',
+            'default' => '',
+            'capability'        => 'manage_options',
+
+        )
+    );
+
+    $wp_customize->add_control( 'publish_date', array(
+        'type' => 'date',
+        'priority' => 10, // Within the section.
+        'section' => 'title_tagline', // Required, core or custom.
+        'label' => __( 'Site Published Date' ),
+        'description' => __( 'The date your site first time published' ),
+        'input_attrs' => array(
+            'class' => 'date',
+            'style' => 'border: 1px solid #ccc',
+            'placeholder' => __( 'yyyy/mm/dd/' ),
+        ),
+        //'active_callback' => 'is_front_page',
+    ) );
+
 
     class NewsAnchor_Info extends WP_Customize_Control {
         public $type = 'info';
